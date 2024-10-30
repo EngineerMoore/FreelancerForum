@@ -18,26 +18,29 @@ const newFreelancers = [
 // TODO: push names on a time interval
 // need to setTimeout()
 
+const interval = 3000;
+newFreelancers.forEach((person, i) => setTimeout(() => {
+  freelancers.push(person)
+}, i*interval));
 
-const addFreelancers = (people) => {
-  people.forEach((person) => freelancers.push(person));
-  }
-setInterval(addFreelancers(newFreelancers),3000);
+// const addFreelancers = (people) => {
+//   people.forEach((person) => freelancers.push(person));
+//   }
+// setInterval(addFreelancers(newFreelancers),3000);
 
 
-//   // const test = () => {
-//   //   newFreelancers.forEach((person) => {
-//   //     freelancers.push(person)});i++; if (i < newFreelancers.length){
-//   //       const changeIndex = () => {i++};        
-//   //       setTimeout(() => {changeIndex},3000);
-//   //       addMe;}}},
+  // const test = () => {
+  //   newFreelancers.forEach((person) => {
+  //     freelancers.push(person);i++; if (i < newFreelancers.length-1){
+  //       // const changeIndex = () => {i++};
+  //       setTimeout(() => {i--},3000);}})}
 
 
  
 // // const addFreelancers = () => {
 // //   newFreelancers.forEach((person) => {freelancers.push(person)});}
 
-for (let i=0; i< newFreelancers.length; i++) {freelancers.push(newFreelancers[i])}
+// for (let i=0; i< newFreelancers.length; i++) {freelancers.push(newFreelancers[i])}
 
 
 
